@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_background_intro"
+    android:windowTranslucentNavigation="true"
+    android:windowTranslucentStatus="true">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="26dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@id/edtAuthUserName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtAuthUserName"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_background_auth"
+        android:hint="@string/username"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@android:color/white"
+        android:imeOptions="actionNext"
+        android:textColorHint="@color/middleGray"
+        app:layout_constraintBottom_toTopOf="@id/edtAuthEmail"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtAuthEmail"
+        android:layout_width="0dp"
+        android:imeOptions="actionNext"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_background_auth"
+
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/middleGray"
+        app:layout_constraintBottom_toTopOf="@id/edtAuthPassword"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toBottomOf="@id/edtAuthUserName" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtAuthPassword"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:imeOptions="actionDone"
+        android:background="@drawable/edittext_background_auth"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/middleGray"
+        app:layout_constraintBottom_toTopOf="@id/btnAuthConfirm"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toBottomOf="@id/edtAuthEmail" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAuthConfirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:foreground="@drawable/button_background_login"
+        android:text="@string/login"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnOpenSignUp"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toBottomOf="@id/edtAuthPassword" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOpenSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:shadowColor="@android:color/transparent"
+        android:text="@string/open_signup"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/progressAuth"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toBottomOf="@id/btnAuthConfirm" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnOpenSignUp" />
+
+    <!-- GuideLines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

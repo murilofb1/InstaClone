@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name" translatable="false">InstaClone</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="open_signup">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="fill_email">Fill your e-mail first</string>
+    <string name="fill_username">Fill your username first</string>
+    <string name="fill_password">Fill your password first</string>
+    <string name="fill_all">Fill all the fields first</string>
+    <string name="exit">Exit</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="new_post">New Post</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="posts">Posts</string>
+    <string name="followers">Followers</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="following">Following</string>
+    <string name="save_changes">Save changes</string>
+    <string name="change_photo">Change photo</string>
+    <string name="undo">Undo</string>
+    <string name="remove_photo_confirmation">Profile photo removed</string>
+    <string name="search_hint">Who are you looking for?</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="follow">Follow</string>
+    <string name="title_activity_filter">Select a filter</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="publish">Publish</string>
+    <string name="post_description">Add a description for your new post (optional)</string>
+    <string name="default_filter">Default</string>
+    <string name="success_post">Your photo has been posted</string>
+    <string name="failure_post">Error on publishing your post</string>
+    <string name="trying_to_post">Your post is being processed</string>
+    <string name="comment_this_picture">Comment this picture</string>
+    <string name="post_visualization">Full Post</string>
+    <string name="comments">Comments</string>
+    <string name="toast_empty_comment">Insert a comment first</string>
+    <string name="likes">likes</string>
+    <string name="single_like">like</string>
+</resources>

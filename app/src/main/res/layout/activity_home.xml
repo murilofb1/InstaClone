@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/includedToolbar"
+        layout="@layout/toolbar_custom"
+        android:elevation="100dp" />
+
+    <FrameLayout
+        android:id="@+id/homeViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <include
+        android:id="@+id/includedBottomNavigation"
+        layout="@layout/bottom_navigation_home"
+        android:elevation="100dp" />
+
+</LinearLayout>

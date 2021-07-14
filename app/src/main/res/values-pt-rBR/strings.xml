@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="e_mail">E-mail</string>
+    <string name="open_signup">Cadastrar-se</string>
+    <string name="login">Entrar</string>
+    <string name="password">Senha</string>
+    <string name="username">Nome de usuário</string>
+    <string name="confirm">Confirmar</string>
+
+    <string name="fill_email">O campo de e-mail deve ser preenchido</string>
+    <string name="fill_username">O nome de usuário deve ser preenchido</string>
+    <string name="fill_password">O campo de senha deve ser preenchido</string>
+    <string name="fill_all">Preencha todos os campos acima primeiro</string>
+    <string name="exit">Sair</string>
+    <string name="followers">Seguidores</string>
+    <string name="new_post">Nova Postagem</string>
+    <string name="profile">Perfil</string>
+    <string name="search">Pesquisar</string>
+    <string name="posts">Postagens</string>
+    <string name="edit_profile">Editar perfil</string>
+    <string name="following">Seguindo</string>
+    <string name="save_changes">Salvar alterações</string>
+    <string name="change_photo">Alterar foto</string>
+    <string name="undo">Desfazer</string>
+    <string name="remove_photo_confirmation">Foto de perfil removida</string>
+    <string name="follow">Seguir</string>
+    <string name="unfollow">Deixar de seguir</string>
+    <string name="next">Proximo</string>
+    <string name="previous">Anterior</string>
+    <string name="title_activity_filter">Escolha um filtro</string>
+    <string name="search_hint">Quem você quer encontrar?</string>
+    <string name="post_description">Insira uma descrição para sua postagem</string>
+    <string name="publish">Publicar</string>
+    <string name="default_filter">Padrão</string>
+    <string name="success_post">Sua foto foi postada</string>
+    <string name="failure_post">Erro ao postar sua foto</string>
+    <string name="trying_to_post">Salvando postagem</string>
+    <string name="post_visualization">Visualizar postagem</string>
+    <string name="comment_this_picture">Comente essa foto</string>
+    <string name="comments">Comentários</string>
+    <string name="toast_empty_comment">Insira um comentário primeiro</string>
+    <string name="likes">Curtidas</string>
+    <string name="single_like">Curtida</string>
+</resources>

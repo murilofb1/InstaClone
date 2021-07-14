@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgProfileImage"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearance="@style/CircleImageView"
+        android:src="@drawable/default_profile_image"
+        app:layout_constraintEnd_toEndOf="@id/guideLeft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtPostsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/txtPosts"
+        app:layout_constraintEnd_toEndOf="@id/txtPosts"
+        app:layout_constraintStart_toStartOf="@id/txtPosts"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtPosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/posts"
+        app:layout_constraintEnd_toStartOf="@id/txtFollowers"
+        app:layout_constraintStart_toStartOf="@id/guideLeft"
+        app:layout_constraintTop_toBottomOf="@id/txtPostsCount" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtFollowersCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/txtFollowers"
+        app:layout_constraintEnd_toEndOf="@id/txtFollowers"
+        app:layout_constraintStart_toStartOf="@id/txtFollowers"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtFollowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/followers"
+        app:layout_constraintEnd_toStartOf="@id/txtFollowing"
+        app:layout_constraintStart_toEndOf="@id/txtPosts"
+        app:layout_constraintTop_toBottomOf="@id/txtFollowersCount" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtFollowingCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/txtPosts"
+        app:layout_constraintEnd_toEndOf="@id/txtFollowing"
+        app:layout_constraintStart_toStartOf="@id/txtFollowing"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtFollowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/following"
+        app:layout_constraintEnd_toEndOf="@id/guideRight"
+        app:layout_constraintStart_toEndOf="@id/txtFollowers"
+        app:layout_constraintTop_toBottomOf="@id/txtFollowingCount" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnActionProfile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/edit_profile"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@id/imgProfileImage"
+        app:layout_constraintEnd_toEndOf="@id/guideRight"
+        app:layout_constraintStart_toStartOf="@id/guideLeft"
+        app:layout_constraintTop_toBottomOf="@id/txtFollowers" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

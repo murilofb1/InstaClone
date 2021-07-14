@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/commentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="3dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgCommenterPhoto"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_profile_image"
+        app:shapeAppearance="@style/CircleImageView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtCommenterUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_comment"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingEnd="10dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_comment"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

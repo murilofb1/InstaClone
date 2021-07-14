@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarUserProfile"
+        layout="@layout/toolbar_custom" />
+
+    <include
+        android:id="@+id/headerUserProfile"
+        layout="@layout/header_profile" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerUserPosts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"
+        android:paddingRight="10dp" />
+</LinearLayout>

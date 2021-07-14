@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/rvFeedPostImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:foreground="@drawable/ripple_feed_image"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/RoundedImage" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/rvFeedPostDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@id/rvFeedPostImage"
+        app:layout_constraintTop_toBottomOf="@id/rvFeedPostImage" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/rvFeedBtnLike"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_unliked"
+        app:layout_constraintEnd_toStartOf="@id/rvFeedBtnComment"
+        app:layout_constraintTop_toTopOf="@id/rvFeedBtnComment" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/rvFeedBtnComment"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_comment"
+        app:layout_constraintEnd_toEndOf="@id/rvFeedPostImage"
+        app:layout_constraintTop_toBottomOf="@id/rvFeedPostImage" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutUserInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="@id/rvFeedPostImage"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/rvFeedPostImage"
+        app:layout_constraintTop_toTopOf="@id/rvFeedPostImage">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/rvFeedUserProfilePicture"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="1dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_profile_image"
+            app:shapeAppearance="@style/CircleImageView" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/rvFeedUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
